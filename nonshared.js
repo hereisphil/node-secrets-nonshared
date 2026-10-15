@@ -1,5 +1,9 @@
+require("dotenv").config();
 const http = require("http");
 const fs = require("fs");
+
+// Non-Shared Secret Example
+console.log(process.env.NODE_ENV);
 
 const port = 3002;
 const filenames = fs.readdirSync("./");
